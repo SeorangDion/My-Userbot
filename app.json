@@ -1,0 +1,35 @@
+{
+  "name": "Userbot",
+  "description": "Simple base for a telethon userbot!",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "telethon"
+  ],
+  "repository": "https://github.com/SeorangDion/My-Userbot",
+  "env": {
+    "API_ID": {
+      "description": "Get it from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get it from https://my.telegram.org",
+      "value": ""
+    },
+    "SESSION_STRING": {
+      "description": "Your telethon string.",
+      "value": ""
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
